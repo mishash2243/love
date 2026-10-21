@@ -3,21 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>С Днём отца!</title>
+<title>Моя любовь к тебе</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>С Днём отца, папа! 💙</h1>
-  <p class="subtitle">Спасибо за всё. Даже на расстоянии я всегда с тобой.</p>
 
-  <div class="slideshow" id="slideshow">
-    <img src="photos/1.jpg" class="active" alt="">
-    <img src="photos/2.jpg" alt="">
-    <img src="photos/3.jpg" alt="">
+  <!-- Огромное сердце на фоне -->
+  <div class="bg-heart">❤️</div>
+
+  <!-- Маленький человечек сбоку (слева) -->
+  <div class="little-me">
+    <span class="me-icon">🧍‍♂️</span>
+    <span class="me-text">твой любимый</span>
   </div>
 
-  <p class="caption">Каждое фото — момент, который я храню. Люблю тебя!</p>
-  <div class="heart">❤️</div>
+  <!-- Главный блок по центру -->
+  <div class="main-content" id="main-content">
+    <h1>Моя любовь к тебе</h1>
+    
+    <!-- Стрелка и кнопка -->
+    <div class="arrow-container" onclick="startCompliments()">
+      <div class="arrow-text">Нажми сюда</div>
+      <div class="arrow-down">⬇️</div>
+    </div>
+  </div>
+
+  <!-- Контейнер для комплиментов -->
+  <div id="compliments-container"></div>
 
   <script src="script.js"></script>
 </body>
