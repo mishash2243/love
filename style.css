@@ -19,29 +19,30 @@ body {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50vw;
-  opacity: 0.15; /* Полупрозрачное */
-  pointer-events: none; /* Чтобы не мешало кликам */
+  font-size: 80vw; /* Сделали ЕЩЕ БОЛЬШЕ (на весь экран) */
+  opacity: 0.15; 
+  pointer-events: none; 
   z-index: 0;
-  filter: drop-shadow(0 0 20px #ff1493);
+  filter: drop-shadow(0 0 30px #ff1493);
 }
 
 /* Маленький человечек сбоку */
 .little-me {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 20px;
+  left: 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 10px 20px;
-  border-radius: 30px;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 5px 15px;
+  border-radius: 20px;
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   z-index: 10;
+  transform: scale(0.8); /* Уменьшили человечка */
+  transform-origin: bottom left;
 }
-
 .me-icon { font-size: 2.5em; }
 .me-text { 
   font-size: 1.1em; 
